@@ -5,24 +5,6 @@ class Admin::PreferencesController < ApplicationController
 
   end
 
-  # def new
-  #   if Preference.all.empty?
-  #     @preference = Preference.new
-  #   else
-  #     redirect_to :edit
-  #   end
-  # end
-  #
-  # def create
-  #   @preference = Preference.new(preference_params)
-  #   @preference.save
-  #   redirect_to admin_preferences_path
-  # end
-  #
-  # def edit
-  #
-  # end
-
   def update
     @preference.update(preference_params)
     redirect_to admin_preferences_path
